@@ -56,9 +56,29 @@ document.getElementById('formSend')
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
         // btn.value = 'Send Email';  // No necesitas esta línea si estás usando un botón de tipo "submit"
-        alert('Sent!');
+        alert('Correo enviado con esxito, pronto te contactare!');
       }, (err) => {
         // btn.value = 'Send Email';  // No necesitas esta línea si estás usando un botón de tipo "submit"
         alert(JSON.stringify(err));
       });
   });
+
+  document.getElementById("descargarCV").addEventListener("click", function() {
+    // Ruta al archivo PDF (corregido el nombre del archivo)
+    var rutaPDF = "hvEsteban.pdf";
+
+    // Crea un enlace temporal
+    var enlaceTemporal = document.createElement("a");
+    enlaceTemporal.href = rutaPDF;
+    enlaceTemporal.target = "_blank"; // Abre el enlace en una nueva ventana/tab
+    enlaceTemporal.download = "hvEsteban.pdf"; // Nombre de descarga del archivo
+
+    // Añade el enlace temporal al cuerpo del documento
+    document.body.appendChild(enlaceTemporal);
+
+    // Simula un clic en el enlace temporal para iniciar la descarga
+    enlaceTemporal.click();
+
+    // Elimina el enlace temporal del cuerpo del documento
+    document.body.removeChild(enlaceTemporal);
+});

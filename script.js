@@ -1,3 +1,5 @@
+
+
 let menuVisible = false;
 //Función que oculta o muestra el menu
 function mostrarOcultarMenu(){
@@ -39,3 +41,24 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+const btn = document.getElementById('btnSend');
+
+document.getElementById('formSend')
+  .addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // btn.value = 'Sending...';  // No necesitas esta línea si estás usando un botón de tipo "submit"
+
+    const serviceID = 'default_service';
+    const templateID = 'template_txmvftk';
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        // btn.value = 'Send Email';  // No necesitas esta línea si estás usando un botón de tipo "submit"
+        alert('Sent!');
+      }, (err) => {
+        // btn.value = 'Send Email';  // No necesitas esta línea si estás usando un botón de tipo "submit"
+        alert(JSON.stringify(err));
+      });
+  });

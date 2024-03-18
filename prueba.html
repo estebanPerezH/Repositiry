@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENÚ ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Esteban</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">MAPPE</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Foto de perfil de Instagram para Marca Personal con Foto sin Fondo Profesional Elegante Amarillo y Blanco (1).png" alt="">
+            </div>
+            <h1>ESTEBAN PÉREZ</h1>
+            <h2>Desarrollador de software - Backend</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Esteban Pérez.</span> Soy una persona apasionada por lo que hago, y me gusta mucho la idea de poder hacerlo mejor. Siempre espero poder ayudar y también poder aprender mucho más. Me caracteriza mi responsabilidad y mi autogestión para la solución de problemas.</p>
+
+            <div class="fila">
+                <!-- Datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            20-07-2004
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            304 4965211
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            estebani1421@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            Restringido
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Calle 55 sur N 65-91
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Descargar mi hoja de vida</h2>
+                <button id="descargarCV">
+                    Descargar HdV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>PHP y Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SCRUM</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript y NODE</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML y CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Project Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Técnico en Desarrollo de Software</h4>
+                        <span class="casa">SENA</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>En este instituto aprendí muchas bases de programación, las cuales me ayudaron para desenvolverme en mi primer trabajo como desarrollador Backend.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Fundamentos de Software</h4>
+                        <span class="casa">INTEC</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>En estos cursos, pude trabajar y comprender más los fundamentos del software, donde me proporcionaban clases personalizadas que me ayudaban mucho a resolver mis dudas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de Trabajo</h3>
+                    <div class="item der">
+                        <h4>Backend Developer</h4>
+                        <span class="casa">Mutual Bienestar</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>En este trabajo, me ayudó mucho a comprenderme a mí mismo, a manejar las frustraciones y a ser.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Backend Developer</h4>
+                        <span class="casa">Riwi</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Aquí trabajé en un proyecto para la empresa, con un grupo de 6 personas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/howard.png" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto Howard</h3>
+                        <p><a href="https://estebanperezh.github.io/Howard/">Dale click</a></p>
+                    </div>
+                </div>
+                <div class="proyecto imgSpaceX">
+                    <img src="img/spaceX.png" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto SpaceX</h3>
+                        <p><a href="https://estebanperezh.github.io/SpaceX/">Dale click</a></p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/crudJs.png" alt="" style="width:100%;height: 100; display:block;margin:auto;">
+                    <div class="overlay">
+                        <h3>CRUD</h3>
+                        <p><a href="https://estebanperezh.github.io/inventario/">Dale click</a></p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/carritoCompras.png" alt="" style="width:100%;height: 100; display:block;margin:auto;">
+                    <div class="overlay">
+                        <h3>Carrito de Compras</h3>
+                        <p><a href="https://estebanperezh.github.io/buyes/">Dale click </a></p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Captura de pantalla 2024-03-12 152512.png" alt="" style="width:100%;height: 100; display:block;margin:auto;">
+                    <div class="overlay">
+                        <p><a href="https://estebanperezh.github.io/jobs/">Dale click </a></p>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/RiwiPoints.png" alt="" style="width:100%;height: 100; display:block;margin:auto;">
+                    <div class="overlay">
+                        <h3>Proyecto RiwiPoints</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Y más...</h2>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO <br>
+                ENVÍAME TU INFORMACIÓN, PRONTAMENTE ESTARÉ EN CONTACTO CONTIGO
+            </h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="formSend">
+                        <input type="text" placeholder="Tu Nombre" name="nombre" id="nombre">
+                        <input type="text" placeholder="Número telefónico" name="telefono" id="telefono">
+                        <input type="text" placeholder="Dirección de correo" name="correo" id="correo">
+                        <input type="text" placeholder="Tema" name="tema" id="tema">
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button class="btnSend " type="submit">
+                            Enviar Mensaje<i  class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Calle 55 sur N 65-91
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llámame: 3218324798 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: estebani1421@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <p>&copy; 2024 | Creado por Esteban Pérez</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
